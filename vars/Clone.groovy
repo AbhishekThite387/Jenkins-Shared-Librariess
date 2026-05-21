@@ -1,3 +1,7 @@
-def call(String url, String branch){
-  git url: "${url}", branch: "${branch}"
+def call(String repoUrl, String branchName){
+
+    sh """
+        git clone -b ${branchName} ${repoUrl}
+    """
+
 }
