@@ -1,4 +1,4 @@
-def call(string imageName , string imagetag){
+def call(String imageName , String imagetag){
   sh """
   docker build -t ${imageName}:${imagetag}
   """
